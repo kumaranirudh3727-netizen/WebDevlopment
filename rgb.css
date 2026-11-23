@@ -1,0 +1,26 @@
+h1{
+    color :red;
+    color:rgb(255, 000, 000)}
+    span{
+        color:rgba(235, 22, 235, 0.5);
+    }
+    span:hover{
+        color:rgba(0, 255, 255, 1);
+    } 
+    span{
+        background-color:#00ff004d
+    }
+   a:hover{
+    color:crimson;
+   }
+   input:hover {
+    background-color:black;
+    color:rgba(000,255, 255 ,0.5)
+   }
+
+   body{
+   background-image:url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg") , url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg");
+   background-size: 100% 100%;
+   background-attachment: fixed;
+    background-repeat: no-repeat;
+   }

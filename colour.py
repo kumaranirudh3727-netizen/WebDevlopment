@@ -1,0 +1,15 @@
+from turtle import *
+speed(0)
+setposition(-40,     -30)
+bgcolor("white")
+color("green", "yellow")
+for i in range(160):
+    rt(i)
+    circle(170, i)
+    fd(100)
+    ()
+    lt(240)
+    fd(i)
+    left(1)
+    hideturtle()
+done()

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practicle question solve</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Experiment 3:- Write a Program in HTML to Create a web page to demonstrate 
+use of various Table tags. -->
+
+    <table>
+        <caption>
+            student marks
+        </caption>
+        <tr>
+            <th>name</th>
+            <th>math </th>
+            <th>science</th>
+            <th>total</th>
+        </tr>
+        <tr>
+            <td>aman</td>
+            <td>90</td>
+            <td>50</td>
+            <td>140</td>
+        </tr>
+        <tr>
+            <td>rohit</td>
+            <td>80</td>
+            <td>90</td>
+            <td>170</td>
+        </tr>
+        <tr>
+            <td>aayush</td>
+            <td>79 </td>
+            <td>81</td>
+            <td>160</td>
+        </tr>
+<tfoot>
+    <tr>
+        <td>Avarage</td>
+        <td>83</td>
+        <td>74</td>
+        <td>157</td>
+    </tr>
+</tfoot>
+    </table>
+
+
+<hr>
+
+<!-- 
+Experiment 4:- Write a Program in HTML to Show Rowspan in table.
+ -->
+
+
+<table>
+    <tr>
+        <th>Dept</th>
+        <th>Employe</th>
+        <th>Role</th>
+    </tr>
+    <tr>
+        <td rowspan="3">Engineering</td>
+        <td>manish</td>
+        <td>backend dev</td>
+    </tr>
+    <tr>
+        <td>Anirudh</td>
+        <td>Frontend Dev </td>
+        
+    </tr>
+    <tr>
+        <td>pankaj</td>
+        <td>all rounder</td>
+    </tr>
+    <tr>
+        <td rowspan="2">desin</td>
+        <td>amit</td>
+        <td>web desiner</td>
+    </tr>
+    <tr>
+        <td>roushan</td>
+        <td>software devloper</td>
+    </tr>
+</table>
+
+
+
+<hr>
+
+
+
+<!-- 
+Experiment 5:- Write a Program in HTML to Show Colspan in table. -->
+
+
+<table>
+    <tr>
+        <th colspan="3">student details</th>
+    </tr>
+    <tr>
+        <th>name</th>
+        <th>roll</th>
+        <th>branch</th>
+    </tr>
+    <tr>
+      <td>amit</td>
+      <td>90</td>
+      <td>cse</td>
+    </tr>
+    <tr>
+        <td>anshu</td>
+        <td>70</td>
+        <td>cse</td>
+    </tr>
+</table>
+
+<hr>
+
+    <!-- Q 1
+
+     Design a home page which displays information about your college department using
+heading, HTML entities and paragraphs. Implement diffbrent types of list tags in the
+college department home page. Create a webpage for any clinic using marquee and HTMl
+formatting ta-es. Create an image(s) and iframe in a webpage.
+    
+    -->
+
+<h1 style align="center" >Computer science & engineering Department</h1>
+<hr>
+
+<h2>About Department</h2>
+
+<p>The Department of Computer Science provides quality education in programming, software development, and emerging technologies. It helps students develop technical skills, problem-solving abilities, and prepares them for successful careers in the IT industry.</p>
+
+    <h2>courses</h2>
+
+    <li>
+        <ul>
+            <li>B-tech</li>
+            <li>Poletechnic</li>
+            <li>BBA</li>
+            <li>BCA</li>
+            <li>MBA</li>
+        </ul>
+    </li>
+
+    <h2>
+        Facillity
+    </h2>
+
+    <li>
+        <ul>
+            <li>Computer lab</li>
+            <li>Librerry</li>
+           
+        </ul>
+    </li>
+
+    <h2>
+        Facilty Members
+    </h2>
+
+    <h3>HOD</h3>
+        <p>sk ojha</p>
+    <h3>Proffeser</h3>
+        <p>
+            <li>
+                <ul>
+                    <li>sonu sir</li>
+                    <li>Deepak sir</li>
+                    <li>Affifa khan</li>
+                </ul>
+            </li>
+        </p>
+
+    <marquee behavior="scrolling" direction="right to left">open addimision 2026</marquee>
+
+
+        <img src="college photo.paint" alt="college photo">
+
+     <iframe src="https://www.sityog.edu.in/" frameborder="0">sit college</iframe>
+
+<hr>
+
+<!-- 
+Q 2     Create a Hyperlink in home page connecting it to 3 different pages. Design a webpage using HTML that includes an image map, and embeds audio and video. Design a time-table and display it in a tabular format. iv. Design an admission form for any course in your college with text, password fields, drop-down list, check-boxes, radio button, subnmit, and reset
+button. 
+-->
+
+
+
+
+
+<h1 align="center">SITYOG Institute of Technology</h1>
+
+<!-- Hyperlinks -->
+<h2>Navigation</h2>
+
+<a href="#photo">College Photo</a> |
+<a href="#admissiondate">Admission Date</a> |
+<a href="#coursefee">Course Fee</a>
+
+<hr>
+
+<!-- College Photo -->
+<h2 id="photo">SITYOG Institute of Technology Campus</h2>
+
+<img src="college.jpg" usemap="#campus" width="500" height="300" alt="College Photo">
+
+<map name="campus">
+    <area shape="rect" coords="50,50,200,200"
+          href="#admissionform" alt="Admission Form">
+</map>
+
+<hr>
+
+<!-- Admission Date -->
+<h2 id="admissiondate">Admission Date</h2>
+
+<p>
+Admissions for the 2026-27 session are open.<br>
+Students can apply online or visit the college campus for admission.
+</p>
+
+<hr>
+
+<!-- Course Fee -->
+<h2 id="coursefee">Course Fee</h2>
+
+<table border="1" cellpadding="10">
+<tr bgcolor="lightblue">
+<th>Course</th>
+<th>Fee (Approx.)</th>
+</tr>
+
+<tr>
+<td>B.Tech</td>
+<td>₹3,50,000</td>
+</tr>
+
+<tr>
+<td>BCA</td>
+<td>₹1,20,000</td>
+</tr>
+
+<tr>
+<td>B.Sc</td>
+<td>₹90,000</td>
+</tr>
+
+<tr>
+<td>B.Com</td>
+<td>₹80,000</td>
+</tr>
+
+</table>
+
+<hr>
+
+<!-- Audio -->
+<h2>College Audio</h2>
+
+<audio controls>
+    <source src="college.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+
+<hr>
+
+<!-- Video -->
+<h2>College Video</h2>
+
+<video width="500" controls>
+    <source src="college.mp4" type="video/mp4">
+    Your browser does not support video.
+</video>
+
+<hr>
+
+<!-- Time Table -->
+<h2>College Time Table</h2>
+
+<table border="1" cellpadding="10">
+
+<tr bgcolor="lightblue">
+<th>Day</th>
+<th>9-10</th>
+<th>10-11</th>
+<th>11-12</th>
+<th>12-1</th>
+</tr>
+
+<tr>
+<td>Monday</td>
+<td>Math</td>
+<td>Physics</td>
+<td>Chemistry</td>
+<td>HTML</td>
+</tr>
+
+<tr>
+<td>Tuesday</td>
+<td>English</td>
+<td>Python</td>
+<td>Math</td>
+<td>Lab</td>
+</tr>
+
+<tr>
+<td>Wednesday</td>
+<td>HTML</td>
+<td>Physics</td>
+<td>Python</td>
+<td>Chemistry</td>
+</tr>
+
+<tr>
+<td>Thursday</td>
+<td>Math</td>
+<td>English</td>
+<td>Lab</td>
+<td>HTML</td>
+</tr>
+
+<tr>
+<td>Friday</td>
+<td>Python</td>
+<td>Chemistry</td>
+<td>Physics</td>
+<td>Sports</td>
+</tr>
+
+</table>
+
+<hr>
+
+<!-- Admission Form -->
+<h2 id="admissionform">Admission Form</h2>
+
+<form>
+
+<label>Name:</label><br>
+<input type="text"><br><br>
+
+<label>Password:</label><br>
+<input type="password"><br><br>
+
+<label>Course:</label><br>
+
+<select>
+<option>B.Tech</option>
+<option>BCA</option>
+<option>B.Sc</option>
+<option>B.Com</option>
+</select>
+
+<br><br>
+
+<label>Gender:</label><br>
+
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+
+<br><br>
+
+<label>Hobbies:</label><br>
+
+<input type="checkbox"> Sports
+<input type="checkbox"> Reading
+<input type="checkbox"> Music
+
+<br><br>
+
+<label>Email:</label><br>
+<input type="email">
+
+<br><br>
+
+<label>Mobile Number:</label><br>
+<input type="text">
+
+<br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+
+
+
+</body>
+</html>
